@@ -1,0 +1,30 @@
+.g-consulta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btnC {
+  animation: pulseButton 1.5s ease-in-out infinite;
+}
+
+
+.g-consulta p {
+    color: grey;
+    font-weight: normal;
+}

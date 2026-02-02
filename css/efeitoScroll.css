@@ -1,0 +1,10 @@
+#reveal {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 1.5s ease-out;
+}
+
+#reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}

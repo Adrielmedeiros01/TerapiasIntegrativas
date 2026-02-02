@@ -1,0 +1,41 @@
+
+
+.sessao6{
+    height: 100vh;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+  
+}
+
+.contA{
+    width: 65%;
+    margin-right: 10px;
+
+}
+
+.contA ul {
+    background-color: #04051D;
+}
+
+.contB {
+    width: 35%;
+}
+
+
+.final {
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #04051D;
+}
+
+.final ul, li {
+    display: inline;
+    background-color: #04051D;
+}
+
+.final li {
+    margin-right: 10px;
+}

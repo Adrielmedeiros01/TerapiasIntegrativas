@@ -1,0 +1,61 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#nomeS {
+    font-weight: normal;
+    color: gray;
+}
+
+#principal {
+    font-size: 3rem;
+    font-weight: 600;
+
+}
+
+#aB {
+    font-weight: normal;
+    color: rgb(185, 179, 179);
+    margin-top: 20px;
+}
+
+
+#btn {
+    background-color: #132FA6;
+    color: white;
+    border-radius: 80px;
+    padding: 0.8rem;
+    border: none;
+    transition: 1s;
+    font-weight: bold;
+}
+
+
+#btn:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    animation: none;
+}
+
+
+@keyframes pulseButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btnS1 {
+    animation: pulseButton 1.5s ease-in-out infinite;
+}
+

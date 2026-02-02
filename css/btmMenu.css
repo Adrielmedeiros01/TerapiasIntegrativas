@@ -1,0 +1,18 @@
+
+.btm-menu {        
+    display: none;
+    width: auto; 
+    cursor: pointer;      
+    background-color: #01010e;
+}
+.btm-menu.ativo {          
+    display: block;
+}      
+#icon-menu {     
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+    width: 100%;                       
+}

@@ -1,0 +1,108 @@
+@media screen and (max-width: 760px) {
+
+
+    .btm-menu {
+        display: block;
+
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        background-color: #01010e;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 999;
+
+    }
+
+    /* CENTRALIZA corretamente */
+    header nav ul {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 1rem auto;
+        list-style-type: none;
+    }
+
+    /* #home {
+        margin-top: 5rem;
+    } */
+
+
+    main {
+        width: 80%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #principal {
+        font-size: 2rem;
+        font-weight: 600
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        /* height: 130vh; */
+    }
+
+    .ladA {
+        width: 100%;
+    }
+
+    .ladB {
+        margin-top: 4rem;
+        width: 100%;
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ladB #img {
+        width: 100%;
+    
+    }
+
+    .jornada {
+        flex-direction: column;
+        height: 240vh;
+    }
+
+    #jornAcolhe {
+        display: none;
+    }
+
+    #media {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .g-consulta {
+        height: 300vh;
+    }
+
+    footer {
+        margin-top: 800vh;
+    }
+}
