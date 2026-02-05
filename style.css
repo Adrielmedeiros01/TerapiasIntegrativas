@@ -27,7 +27,7 @@ header {
 }
 
 main {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -288,6 +288,7 @@ footer {
         text-align: center;
     
     }
+    
     #reveal .boas-vindas p#frase {
         font-size: 0.95rem;
     }
@@ -306,17 +307,19 @@ footer {
     }
 
     .jornada {
+        /* height: 50dvh; */
+    
         flex-direction: column;
     }
 
     .card {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 2rem;
     }
 
     #titleSessao3{
-         font-size: 1.8rem;
+         font-size: 1.5rem;
     
     }
 
@@ -326,13 +329,13 @@ footer {
     }
 
     .contatos .ladA{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 2rem;
     }
 
     .contatos .ladB {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 1rem;
     }
