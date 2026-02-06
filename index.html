@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/efeitoScroll.css">
     <title>Terapias Integrativas</title>
@@ -11,10 +12,24 @@
 
 <body>
     <header>
+        <div id="t">Terapias Integrativas</div>
+        <div class="btm-menu">
+            <i id="icon-menu" class="material-symbols-outlined"
+                onclick="clickMenu()">menu</i>
+        </div>
+        <nav id="mostrar" class="nav">
+            <ul>
+                <li><a href="">Início</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Terapias</a></li>
+                <li><a href="">Depoimentos</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="reveal">
             <div class="boas-vindas">
+                <img src="WhatsApp_Image_2026-02-05_at_14.14.39-removebg-preview.png" alt="">
                 <p id="nome">SEARLY MEDEIROS</p>
                 <h1 id="titulo">Reconecte-se com sua <br> essência e econtre o <br> equilíbrio integral</h1>
                 <p id="frase">Atendimento humanizado com foco no bem-estar físico, emocional e sistêmico</p>
@@ -36,7 +51,7 @@
                     </ul>
                 </div>
                 <div class="ladB">
-                    <img src="data:image/jpeg;base64,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"
+                    <img src="WhatsApp Image 2026-02-02 at 19.08.54.jpeg"
                         alt="Imagem">
                 </div>
             </div>
@@ -129,7 +144,8 @@
         </section>
     </main>
     <footer>
-        <p>SEARLY MEDEIROS <br> TERAPIAS INTEGRATIVAS</p>
+        <p>SEARLY MEDEIROS <br> TERAPIAS INTEGRATIVAS</p><br>
+        <img src="WhatsApp_Image_2026-02-05_at_14.14.39-removebg-preview.png" alt="">
     </footer>
     <div id="gradient"></div>
     <script src="script.js"></script>
