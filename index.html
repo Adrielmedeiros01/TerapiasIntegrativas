@@ -39,7 +39,18 @@ body {
         height: auto;
     }
 }
+@media screen and (max-width: 760px){
+    .title, .titletxt {
+        text-align: center;
+    }
 
+    .especialidades{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+}
 .custom {
     height: 70px;
 }
@@ -141,14 +152,15 @@ section .card:hover {
         </section>
         <br><br><br>
 
-        <section id="reveal" class="align-items-center row py-5 py-md-6">
+        <section id="reveal" class="section2 align-items-center row py-5 py-md-6">
 
             <div class="col-md-6">
 
 
-                <h1 id="reveal" class="display-5">Searly Medeiros <br> Terapeuta Integrativo </h1><br>
-                <p id="reveal" style="color: grey;">Eu ajudo você a transformar sua saúde, identificando <br> e tratando a causa do problema.</p>
-                <ul id="reveal" style="list-style-type: none;">
+                <h1 id="reveal" class="title display-5">Searly Medeiros <br> Terapeuta Integrativo </h1><br>
+                <p class="titletxt" id="reveal" style="color: grey;">Eu ajudo você a transformar sua saúde, identificando <br> e tratando a causa do problema.</p>
+                <div class="especialidades" >
+                    <ul id="reveal" style="list-style-type: none;">
                     <li><span id="checklist"> &#10003;</span> Terapia Biofísica</li>
                     <li><span id="checklist"> &#10003;</span> Especialista em terreno biológico</li>
                     <li><span id="checklist"> &#10003;</span> Detox e desparasitação</li>
@@ -158,6 +170,8 @@ section .card:hover {
                     <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 </svg></button><br>  </ul>
+                </div>
+       
 
             </div>
             
