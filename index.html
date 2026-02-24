@@ -31,14 +31,8 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 3rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     /* height: 100dvh; */
-}
-
-
-h1 {
-
-    font-weight: 700;
 }
 
 @media screen and (max-width: 560px){
@@ -124,8 +118,6 @@ section .card:hover {
 
 
 
-
-
 @keyframes pulseButton {
   0% {
     transform: scale(1);
@@ -140,10 +132,17 @@ section .card:hover {
 
 .btnC {
   animation: pulseButton 1.5s ease-in-out infinite;
+  border-radius: 50px;
+}
+
+.btn {
+    border-radius: 50px;
 }
 
 
-
+.card-body {
+    
+}
 </style>
 
 <body>
@@ -270,7 +269,11 @@ section .card:hover {
             <br>
             <div class="row">
                 <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div id="reveal" class="card h-100">
+                    <div style=" background: rgba(24, 24, 24, 0.479);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); color: wheat;" id="reveal" class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Terapias Energeticas (Reoki & Body Talk)</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.
