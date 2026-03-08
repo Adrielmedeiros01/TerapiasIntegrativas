@@ -1,186 +1,205 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="WhatsApp_Image_2026-02-05_at_14.14.39-removebg-preview.png">
-        <title>Terapias Integrativas</title>
+    <title>Terapias Integrativas</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: sans-serif; */
+        font-family: "Varela Round", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #01010e;
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    color: #01010e;
+    }
 
-}
     #reveal {
-    opacity: 0;
-    transform: translateX(-60px);
-    transition: all 1.5s ease-out;
-}
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all 1.5s ease-out;
+    }
 
-#reveal.active {
-    opacity: 1;
-    transform: translateX(0);
-}
+    #reveal.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
-body {
-    background-image: linear-gradient(#AFD6F2, #F8F9FA);
-    /* background-color: #04051D; */
-      /* background-color: #AFD6F2; */
-    color: white;
-  
-}
+    body {
+        background-image: linear-gradient(#AFD6F2, #F8F9FA);
+        /* background-color: #04051D; */
+        /* background-color: #AFD6F2; */
+        color: white;
 
-.sessao1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    /* margin-bottom: 1.5rem; */
-    /* height: 100dvh; */
-  
-}
+    }
 
-.sessao1 h1{
-color: #01010e;
-}
-
-.section2 {
-    /* background-color: red; */
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-@media screen and (max-width: 560px){
     .sessao1 {
-        margin-top: 50%;
-        height: auto;
-    }
-}
-@media screen and (max-width: 760px){
-    .title, .titletxt {
-        text-align: center;
-    }
-
-    .especialidades{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* text-align: center; */
+        margin-top: 3rem;
+        /* margin-bottom: 1.5rem; */
+        /* height: 100dvh; */
+
     }
 
-    .mentoria {
-        flex-direction: column;
+    .sessao1 h1 {
+        color: #01010e;
     }
 
-    .mladA{
-        width: 100%;
+    .section2 {
         /* background-color: red; */
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
-     .mladB{
-        width: 100%;
+
+    .mladA {
+        text-align: center;
     }
-}
-.custom {
-    height: 70px;
-}
 
-
-#checklist {
-    color: rgb(15, 90, 177);
-}
-
-
-.col-sm-6{
-    transition: 1s;
-}
-.col-sm-6:hover {
-    cursor: pointer;
-    transition: 1s;
-    border-color: #c78c19;
-    transform: scale(1.1);
-}
-
-footer {
-    cursor: pointer;
-}
-
-/* Transição suave para crescer */
-.card {
-    transition: transform 1s;
-}
-
-/* 🔥 Keyframe apenas para DIMINUIR */
-@keyframes diminuirOutros {
-    from {
-        transform: scale(1);
+    @media screen and (max-width: 560px) {
+        .sessao1 {
+            margin-top: 50%;
+            height: auto;
+        }
     }
-    to {
-        transform: scale(0.9);
-    }
-}
 
-/* Quando passar o mouse na section,
+    @media screen and (max-width: 760px) {
+
+        .title,
+        .titletxt {
+            text-align: center;
+        }
+
+        .especialidades {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* text-align: center; */
+        }
+
+        .mentoria {
+            flex-direction: column;
+        }
+
+        .mladA {
+            width: 100%;
+            /* background-color: red; */
+        }
+
+        .mladB {
+            width: 100%;
+        }
+    }
+
+    .custom {
+        height: 70px;
+    }
+
+
+    #checklist {
+        color: rgb(15, 90, 177);
+    }
+
+
+    .col-sm-6 {
+        transition: 1s;
+    }
+
+    .col-sm-6:hover {
+        cursor: pointer;
+        transition: 1s;
+        border-color: #c78c19;
+        transform: scale(1.1);
+    }
+
+    footer {
+        cursor: pointer;
+    }
+
+    /* Transição suave para crescer */
+    .card {
+        transition: transform 1s;
+    }
+
+    /* 🔥 Keyframe apenas para DIMINUIR */
+    @keyframes diminuirOutros {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(0.9);
+        }
+    }
+
+    /* Quando passar o mouse na section,
    todos os cards diminuem */
-section:hover .card {
-    animation: diminuirOutros 0.3s forwards;
-    transition: 1s;
-}
+    section:hover .card {
+        animation: diminuirOutros 0.3s forwards;
+        transition: 1s;
+    }
 
-/* O card específico cresce apenas com hover */
-section .card:hover {
-    transform: scale(1.1);
-    animation: none; /* cancela a animação de diminuir */
-    z-index: 5;
-}
-
-
-.anuncio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-}
+    /* O card específico cresce apenas com hover */
+    section .card:hover {
+        transform: scale(1.1);
+        animation: none;
+        /* cancela a animação de diminuir */
+        z-index: 5;
+    }
 
 
+    .anuncio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
 
-@keyframes pulseButton {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
-.btnC {
-  animation: pulseButton 1.5s ease-in-out infinite;
-  border-radius: 50px;
-}
 
-.btn {
-    border-radius: 50px;
-}
+    @keyframes pulseButton {
+        0% {
+            transform: scale(1);
+        }
 
-.card-body {
-    
-}
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .btnC {
+        animation: pulseButton 1.5s ease-in-out infinite;
+        border-radius: 50px;
+    }
+
+    .btn {
+        border-radius: 50px;
+    }
+
+    .card-body {}
 </style>
 
 <body>
@@ -195,7 +214,7 @@ section .card:hover {
 
 
             <style>
-               .navbar-nav a:hover{
+                .navbar-nav a:hover {
                     background-color: white;
                     color: #01010e;
                     padding: 10px;
@@ -204,18 +223,18 @@ section .card:hover {
                 }
             </style>
             <div class="collapse navbar-collapse" id="navbarNav">
-               
+
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
-                          <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#section3">Terapias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section2">Sobre</a>
                     </li>
-              
+
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Depoimentos</a>
                     </li> -->
@@ -231,11 +250,15 @@ section .card:hover {
                 <!-- <p id="nome">SEARLY MEDEIROS</p> -->
                 <h1 class="display-4">Reconecte-se com sua <br> essência e encontre o <br> equilíbrio integral</h1>
                 <br>
-                <p style="color: grey;" id="frase">Atendimento humanizado com foco no bem-estar físico, emocional e sistêmico</p>
+                <p style="color: grey;" id="frase">Atendimento humanizado com foco no bem-estar físico, emocional e
+                    sistêmico</p>
                 <br>
-                <button type="button" class="btn btn-primary btnC">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button>
+                <button type="button" class="btn btn-primary btnC">Agende sua Sessão <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg></button>
 
             </div>
         </section>
@@ -247,215 +270,244 @@ section .card:hover {
 
 
                 <h1 id="reveal" class="title display-5">Searly Medeiros <br> Terapeuta Integrativo </h1><br>
-                <p class="titletxt" id="reveal" style="color: grey;">Eu ajudo você a transformar sua saúde, identificando <br> e tratando a causa do problema.</p>
-                <div class="especialidades" >
-                    <ul id="reveal" style="list-style-type: none;">
-                    <li><span id="checklist"> &#10003;</span> Terapia Biofísica</li>
-                    <li><span id="checklist"> &#10003;</span> Especialista em terreno biológico</li>
-                    <li><span id="checklist"> &#10003;</span> Detox e desparasitação</li>
-                    <li><span id="checklist"> &#10003;</span> Naturopatia</li>
-                    <li><span id="checklist"> &#10003;</span> Bioressonância Pro-sync</li>
-                    <br>
-                    <!-- <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <p class="titletxt" id="reveal" style="color: grey;">Eu ajudo você a transformar sua saúde,
+                    identificando <br> e tratando a causa do problema.</p>
+                <div class="especialidades">
+                    <ul id="reveal" style="list-style-type: none; padding: 0; margin: 0;">
+                        <li><span id="checklist"> &#10003;</span> Terapia Biofísica</li>
+                        <li><span id="checklist"> &#10003;</span> Especialista em terreno biológico</li>
+                        <li><span id="checklist"> &#10003;</span> Detox e desparasitação</li>
+                        <li><span id="checklist"> &#10003;</span> Naturopatia</li>
+                        <li><span id="checklist"> &#10003;</span> Bioressonância Pro-sync</li>
+                        <br>
+                        <!-- <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 </svg></button> -->
-<br>  </ul>
+                        <br>
+                    </ul>
                 </div>
-       
+
 
             </div>
-            
+
             <div id="reveal" class="col-md-6 d-flex align-items-center justify-content-center">
-                
-                <img style="border-radius: 10%;" width="80%" src="WhatsApp Image 2026-01-30 at 14.38.40 (2).jpeg"
+
+                <img style="border-radius: 100%;" width="80%" src="WhatsApp Image 2026-02-02 at 19.08.54.jpeg"
                     alt="Imagem">
 
             </div>
 
         </section>
 
-        
-
-    <section id="reveal" class="mentoria">
-
-        <style>
-
-    .cima {
-        width: 100%;
-        margin: 0 auto;
-        /* margin-top: 2rem; */
-        display: flex;
-        align-items: center; */
-        /* /* justify-content: center; */
-        /* justify-content: space-between; */
-    }
-
-    .meio {
-        text-align: center;
-        margin-top: 1rem;
-        /* display: flex; */
-    }
 
 
-    .mentoria {
+        <section id="reveal" class="mentoria">
 
-        padding: 1rem;
-        display: flex;
-        border-radius: 10px;
-        /* background-color: #7670DC; */
-        /* background-image: url("https://draaidalina.com.br/wp-content/uploads/2018/09/medicina-quantica.jpg"); */
-        /* background-image: url("https://irp.cdn-website.com/b70fd3fd/dms3rep/multi/medicina-quantica-curitiba.jpg"); */
-        font-family: sans-serif;
-        margin-top: 5rem;
-        margin-bottom: 6rem;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
+            <style>
+                .cima {
+                    width: 100%;
+                    margin: 0 auto;
+                    /* margin-top: 2rem; */
+                    display: flex;
+                    align-items: center;
+                    */
+                    /* /* justify-content: center; */
+                    /* justify-content: space-between; */
+                }
 
-    .mentoria ul {
-        margin-top: 1rem;
-        font-size: small;
-        text-align: center;
-        padding-left: 0;
-  margin-left: 0;
-        
-    }
+                .meio {
+                    text-align: center;
+                    margin-top: 1rem;
+                    /* display: flex; */
+                }
 
 
-    .mentoria li {
-        list-style-type: none;
-        margin-top: 1rem;
-        color: #01010e;
-    }
+                .mentoria {
 
-#checklist {
-      color: purple;
-      margin-right: 10px;
+                    padding: 1rem;
+                    display: flex;
+                    border-radius: 10px;
+                    /* background-image: url(Gemini_Generated_Image_bwlvebbwlvebbwlv.png); */
+                    background-position: center;
+                    /* background-color: #7670DC; */
+                    /* background-image: url("https://draaidalina.com.br/wp-content/uploads/2018/09/medicina-quantica.jpg"); */
+                    /* background-image: url("https://irp.cdn-website.com/b70fd3fd/dms3rep/multi/medicina-quantica-curitiba.jpg"); */
+                    font-family: sans-serif;
+                    margin-top: 5rem;
+                    margin-bottom: 6rem;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1rem;
+                }
 
+                .mentoria ul {
+                    margin-top: 1rem;
+                    font-size: small;
+                    text-align: center;
+                    padding-left: 0;
+                    margin-left: 0;
 
-  
-}
-
-  .mladA{
-        width: 50%;
-    }
-
-    .mladB{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    @media screen and (max-width: 760px) {
-        .mladA{
-            width: 100%;
-        }
-        .mladB{
-            width: 100%;
-        }
-    }
-
-    
-
-</style>
- 
-
-<div class="mladA">
-
-    
-        <div id="reveal" class="cima">
-             <h1 class="display-6"><span style="color: midnightblue;">MENTORIA</span> <br> <span style="color: #01010e;">MÉTODO VOLTAGEM 3D</span></h1>
-             <img width="40%" src="WhatsApp_Image_2026-02-05_at_14.14.39-removebg-preview.png" alt="Imagem">
-        </div>
+                }
 
 
-        <div id="reveal" class="meio">
-            <h2 style="color: gray">Venha dar um verdadeiro salto quântico na sua vida!</h2>
-            <ul class="info">
-                <li><span id="checklist"> &#10003;</span>Consultoria em saúde integrativa para pacientes e profissionais.</li>
-                <li><span id="checklist"> &#10003;</span>Saúde preventiva & longevidade.</li>
-                <li><span id="checklist"> &#10003;</span>abordagens em doenças crônicas.</li><br>
-                 <!-- <li> <span id="checklist"> &#10003;</span>Devolver a energia do corpo  e a vitalidade!</li> -->
-                      <button type="button" class="btn btn-primary btnC">Começar agora!
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button>
-            </ul>
-        </div>
+                .mentoria li {
+                    list-style-type: none;
+                    margin-top: 1rem;
+                    color: #01010e;
+                }
 
-     
+                #checklist {
+                    color: purple;
+                    margin-right: 10px;
 
 
-       
-    
-</div>
-<br>
-   <div class="mladB">
-  <!-- <img src="https://northo.com.br/wp-content/uploads/2024/05/rqi-logo-naiara-mendes_northo.png" alt=""> -->
-  <!-- <img src="https://draaidalina.com.br/wp-content/uploads/2018/09/medicina-quantica.jpg" alt=""> -->
-<img style="border-radius: 10px; box-shadow: 5px 5px 10px gray;" width="100%" src="Gemini_Generated_Image_bwlvebbwlvebbwlv.png" alt="">
-</div>
 
-       
-    </section>
+                }
+
+                .mladA {
+                    width: 50%;
+                }
+
+                .mladB {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                @media screen and (max-width: 760px) {
+                    .mladA {
+                        width: 100%;
+                    }
+
+                    .mladB {
+                        width: 100%;
+                    }
+                }
+            </style>
+
+
+            <div class="mladA">
+
+                <section style=" padding: 1rem; border-radius: 10px; opacity: 80%;">
+                    <div id="reveal" class="cima text-center">
+                        <h1 class="display-6"><span style="color: midnightblue;">MENTORIA</span> <span
+                                style="color: #01010e;">MÉTODO VOLTAGEM 3D</span></h1>
+                        <!-- <img width="40%" src="WhatsApp_Image_2026-02-05_at_14.14.39-removebg-preview.png" alt="Imagem"> -->
+                    </div>
+
+
+                    <div id="reveal" class="meio">
+                        <h2 style="color: gray">Venha dar um verdadeiro salto quântico na sua vida!</h2>
+                        <ul class="info">
+                            <li><span id="checklist"> &#10003;</span>Consultoria em saúde integrativa para pacientes e
+                                profissionais.</li>
+                            <li><span id="checklist"> &#10003;</span>Saúde preventiva & longevidade.</li>
+                            <li><span id="checklist"> &#10003;</span>abordagens em doenças crônicas.</li><br>
+                            <!-- <li> <span id="checklist"> &#10003;</span>Devolver a energia do corpo  e a vitalidade!</li> -->
+                            <button type="button" class="btn btn-primary btnC">Começar agora!
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                </svg>
+                            </button>
+                        </ul>
+                    </div>
+
+
+                </section>
+
+
+
+
+
+            </div>
+            <br>
+            <div class="mladB">
+                <!-- <img src="https://northo.com.br/wp-content/uploads/2024/05/rqi-logo-naiara-mendes_northo.png" alt=""> -->
+                <!-- <img src="https://draaidalina.com.br/wp-content/uploads/2018/09/medicina-quantica.jpg" alt=""> -->
+                <img style="border-radius: 10px; box-shadow: 5px 5px 20px  cadetblue;"
+                    width="80%" src="Gemini_Generated_Image_bwlvebbwlvebbwlv.png" alt="">
+            </div>
+
+
+        </section>
 
 
         <section id="reveal" class="d-flex flex-column justify-content-center align-items-center py-5 py-md-6">
 
             <div id="section3">
                 <h1 class="display-6 text-center">UMA JORNADA DE <br> ACOLHIMENTO E TRANSFORMAÇÃO</h1><br><br>
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div id="reveal" class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Constelação Familiar & Sistêmica</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button> </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div id="reveal" class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Constelação Familiar & Sistêmica</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <button type="button" class="btn btn-primary">Agende sua Sessão <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="reveal" class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Criança interir & Desenvolvimento Humano</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <button type="button" class="btn btn-primary">Agende sua Sessão <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div id="reveal" class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Criança interir & Desenvolvimento Humano</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                           <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button> </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div id="reveal" class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Terapias Energeticas (Reoki & Body Talk)</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <button type="button" class="btn btn-primary">Agende sua Sessão <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="reveal" class=" card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.
+                                </p>
+                                <button type="button" class="btn btn-primary">Agende sua Sessão <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                    </svg></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div id="reveal" class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Terapias Energeticas (Reoki & Body Talk)</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button>  </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div id="reveal" class=" card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                           <button type="button" class="btn btn-primary">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button>  </div>
-                    </div>
-                </div>
-            </div>
         </section>
-            
+
         <br><br>
 
         <section id="reveal" class="container text-center anuncio">
@@ -465,9 +517,11 @@ section .card:hover {
                 amet velit eligendi? Similique laudantium odio id deserunt consequuntur in perspiciatis dicta impedit
                 quia.</p>
             <br>
-            <button type="button" class="btn btn-primary btnC">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button>
+            <button type="button" class="btn btn-primary btnC">Agende sua Sessão <svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg></button>
         </section>
 
         <section id="reveal" class="row py-5 py-md-6 align-items-center">
@@ -475,23 +529,25 @@ section .card:hover {
             <div class="col-md-6">
                 <div class="ladA">
                     <h1 id="reveal" class="display-6">INFORMAÇÕES DE CONTATO</h1><br>
-                    <p id="reveal" style="color: grey;">Estamos localizados na cidade de Princesa Isabel, no sertão da Paraíba, em um espaço preparado com carinho para oferecer acolhimento, escuta e transformação.</p><br>
+                    <p id="reveal" style="color: grey;">Estamos localizados na cidade de Princesa Isabel, no sertão da
+                        Paraíba, em um espaço preparado com carinho para oferecer acolhimento, escuta e transformação.
+                    </p><br>
                     <ul style="list-style-type: none; padding: 0; margin-right: 0;">
-                        <li id="reveal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <li id="reveal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                                 <path
                                     d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                             </svg> Princesa Isabel - Paraíba</li><br>
-                        <li id="reveal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <li id="reveal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
                                 <path
                                     d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
                             </svg> Email@gmail.com</li><br>
-                        <li id="reveal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-telephone" viewBox="0 0 16 16">
+                        <li id="reveal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                                 <path
                                     d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg> (00) 0 0000-0000</li>
@@ -500,7 +556,8 @@ section .card:hover {
             </div>
             <div id="reveal" class="col-md-6">
                 <div class="ladB">
-                    <iframe style="border: solid 1px #01010e; border-radius: 10px;" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    <iframe style="border: solid 1px #01010e; border-radius: 10px;" width="100%" height="300"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=princesa%20isabel+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                             href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/">Demografie
                             Karte
@@ -609,18 +666,24 @@ section .card:hover {
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Redes sociais</h6>
-                        <p><i class="fas fa-home me-3"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-</svg> Instagram</p>
+                        <p><i class="fas fa-home me-3"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg> Instagram</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-</svg> E-mail
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                            </svg> E-mail
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg> Telefone</p>
+                        <p><i class="fas fa-phone me-3"></i> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg> Telefone</p>
                         <!-- <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p> -->
                     </div>
                     <!-- Grid column -->
@@ -643,26 +706,26 @@ section .card:hover {
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-        <script>
-            function revealOnScroll() {
-    const elements = document.querySelectorAll('#reveal');
+    <script>
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('#reveal');
 
-    elements.forEach(el => {
-        const windowHeight = window.innerHeight;
-        const elementTop = el.getBoundingClientRect().top;
-        const elementVisible = 100;
+            elements.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
 
-        if (elementTop < windowHeight - elementVisible) {
-            el.classList.add('active');
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
         }
-    });
-}
 
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll(); // roda ao carregar;
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // roda ao carregar;
 
 
-        </script>
+    </script>
 </body>
 
 </html>
